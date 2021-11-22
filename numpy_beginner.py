@@ -55,3 +55,12 @@ print(f'Numpy array: {elements_index2},  of type: {elements_index2.dtype}')
 arr_of_string = np.array(['a', 'e', 'd', 'c'], dtype='S')
 
 print(f'Numpy array: {arr_of_string},  of type: {arr_of_string.dtype}')
+
+# Boolean indexing
+# [ [ 0, 1, 2, 3],[4, 5, 6, 7],[8, 9, 10, 11]]
+multi_arr = np.arange(12).reshape(3, 4)
+# True for the needed element and false for not-needed
+indexing_bol = np.array([True, False, True, True, False, True, True, ])
+
+multi_arr_portion = arr[indexing_bol]
+print(f'Result of boolean index is : {multi_arr_portion}')
