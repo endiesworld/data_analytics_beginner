@@ -45,3 +45,13 @@ print(f'all element in index two: {elements_index2 }')  # [3,7]
 
 slice_2d_arr = arr_2d[:, 1:3]
 print(f'2D array index 1-3, 3 not included: {slice_2d_arr}')  # [[2,3],[6,7]]
+
+# Checking types
+string_arr = np.array(['apple', 'banana', 'cherry'])
+
+print(f'Numpy array: {string_arr},  of type: {string_arr.dtype}')
+print(f'Numpy array: {elements_index2},  of type: {elements_index2.dtype}')
+
+arr_of_string = np.array(['a', 'e', 'd', 'c'], dtype='S')
+
+print(f'Numpy array: {arr_of_string},  of type: {arr_of_string.dtype}')
