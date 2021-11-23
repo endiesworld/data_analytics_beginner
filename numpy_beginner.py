@@ -64,3 +64,6 @@ indexing_bol = np.array([True, False, True, True, False, True, True, ])
 
 multi_arr_portion = arr[indexing_bol]
 print(f'Result of boolean index is : {multi_arr_portion}')
+
+# Numpy generates an array of boolean when operated a comparator operator is used on it
+print(arr > 3.5)
