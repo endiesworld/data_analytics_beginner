@@ -67,3 +67,11 @@ print(f'Result of boolean index is : {multi_arr_portion}')
 
 # Numpy generates an array of boolean when operated a comparator operator is used on it
 print(arr > 3.5)
+
+my_house = np.array([18.0, 20.0, 10.75, 9.50])
+your_house = np.array([14.0, 24.0, 14.25, 9.0])
+
+# my_house greater than 18.5 or smaller than 10
+print(my_house[np.logical_or(my_house > 18.5, my_house < 10)])
+
+# Both my_house and your_house smaller than 11
