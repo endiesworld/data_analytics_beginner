@@ -36,3 +36,8 @@ print(my_family.loc[:, ['Name', 'Age']])
 # Row base index using iloc. This is same as loc, the only difference is how data s referenced
 
 print(my_family.iloc[[0, 2, 3], [0, 2]])
+print("************ Using pandas series method ********************")
+print(my_family[my_family['Name'].str.len() > 5])
+
+print("**************************************************")
+print(type(my_family))
