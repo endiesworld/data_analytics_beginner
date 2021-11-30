@@ -25,6 +25,7 @@ row_0_ele_list = my_family.loc[['Father']]
 print(row_0_element)
 print(row_0_ele_list)
 
+
 row_0_and_2 = my_family.loc[['Father', 'Son']]
 print(row_0_and_2)
 print(my_family['Father': 'Mother'])
@@ -36,8 +37,10 @@ print(my_family.loc[:, ['Name', 'Age']])
 # Row base index using iloc. This is same as loc, the only difference is how data s referenced
 
 print(my_family.iloc[[0, 2, 3], [0, 2]])
-print("************ Using pandas series method ********************")
-print(my_family[my_family['Name'].str.len() > 5])
 
-print("**************************************************")
-print(type(my_family))
+print("**************************************")
+
+print(my_family['Name'].str.len() > 5)
+
+print("*********** bitwise operator **********")
+print(True & False)
